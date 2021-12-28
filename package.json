@@ -1,0 +1,20 @@
+{
+  "name": "movie-review-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.15.4",
+    "express-session": "^1.17.1",
+    "mysql": "^2.14.1",
+    "node-datetime": "^2.0.3",
+    "node-fetch": "^2.6.1"
+  }
+}
