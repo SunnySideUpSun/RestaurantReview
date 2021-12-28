@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- jQuery and JS bundle w/ Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function show(shown, hidden) {
+              document.getElementById(shown).style.display='block';
+              document.getElementById(hidden).style.display='none';
+              return false;
+            }
+            </script>
+        <script src="/js/user.js"></script>
+
+        <title>Portal</title>
+    </head>
+    <body onload="show('login','register')">
+        <!--Nav-bar-->
+        <div w3-include-html="nav-bar.html"></div>
+        <div class="container">
+        <div id="register">
+            <p>This is page 1</p>
+            <form action="" id="signupForm">
+                <label for="fName">First Name:</label>
+                <input type="text" id="fName" name="fName" placeholder="First name" required><br>
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName" name="lName" placeholder="Last name" required><br>
+                <label for="uName">User Name:</label>
+                <input type="text" id="uName" name="uName" placeholder="User name" required><br>
+                <label for="birthDate">Birthday:</label>
+                <input type="date" id="birthDate" name="birthDate"><br>
+                <label for="pass">Password:</label>
+                <input type="text" id="pass" name="pass" placeholder="Password" required><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email" required><br>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address" required><br>
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="text" id="mNumber" name="mobileNumber" placeholder="Phone number" required><br>
+                <label for="gender">Choose a gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="other">Other</option>
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                </select><br>
+                <button type="button" class="btn btn-success" onclick="register()">Success</button>
+            </form>
+        </div>
+        <button type="button" onclick="return show('login','register');">Hide Register</button><br>
+        <div id="login">
+            <p>This is page 2</p>
+            <form action="" id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password"><br>
+                <button type="button" class="btn btn-success" onclick="login()">Success</button>
+            </form>
+            <div id="message"></div>
+        </div>
+        <button type="button" onclick="return show('register','login');">Hide LogIn</button>
+        </div>
+    </body>
+    <script src="js/w3.js"></script>
+<script>
+        //to bring in other HTML on the fly into this page
+        includeHTML();
+</script>
+</html>

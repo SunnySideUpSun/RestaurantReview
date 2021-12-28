@@ -1,0 +1,191 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#nav-bar
+{
+    position: sticky;
+}
+.navbar-custom{
+    background-color: #CD552F;
+}
+
+.navbar-brand img
+{
+    width: 144px;
+    height: 90px;
+    float: left;
+    border-radius: 34px;
+    
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a 
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    color: darkcyan!important;
+}
+.navbar-toggler
+{
+    border: 4px white;
+    color: white;
+    background-color: white;
+}
+.nav-link
+{
+    color: white!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.carousel_slide
+{
+    margin: 30px;
+    padding: 30px;
+}
+.navbar-brand div{
+    font-family: Roboto;
+    font-size: 40;
+    font-weight: 400;
+}
+#Logo1{
+    color: blue;
+}
+#Logo2{
+    color: white;
+}
+/*Header*/
+.hero h1{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* .search-box{
+        max-width: 380px;
+        width: 100%;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        height: 55px;
+        border-radius: 55px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 0.4rem;
+        position: relative;
+} */
+#searchbar{
+    padding-left: 60px;
+    border: none;
+    outline: none;
+    font-size: 20;
+}
+.reco{
+    padding-top: 30px;
+}
+body{
+    background-image: url("/images/hotdog_wallpaper.jpg");
+}
+.col-md-3{
+    height: 200px;
+    width: 250px;
+    margin: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    float: left;
+}
+#restaurantTitle{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+#restaurantMainPicture{
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 50px;
+}
+.restaurantMain
+{
+    width: auto;
+    height: auto;
+    align-items: center;
+    /* padding-left: 15%;
+    padding-right: 15%; */
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+#restaurantName{
+    text-align: center;
+}
+
+.restaurantDetails{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.embedMap{
+    padding-left: 5%;
+}
+.container{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.hide-navigation-item {
+
+    display: none !important;
+    
+    }
+.reviewsSection{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+.reviewTitle{
+    padding-left: 10%;
+}
+#startofReviews{
+    padding-left: 10%;
+}
+.reviewMain{
+    margin: 30px;
+    border: 2px  solid gray;
+}
+div.reviewMain > *{
+    padding-left: 10%;
+}
+.reviewUserName{
+    font-weight: 650;
+}
+.reviewManipulation{
+    float: right;
+    margin-right: 30px;
+}
+.conatiner{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tableItem{
+    margin: 20px;
+    padding: 30px;
+}
+.profileIcon{
+    width: 30px;
+    height: 30px;
+}
+#UserProfilePicture{
+    width: 50px;
+    height: 50px;
+}
+.reviewImages{
+    height: 150px;
+}

@@ -1,0 +1,36 @@
+<div class="modal" tabindex="-1" id = "editReviewModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit review</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editReviewForm">
+          <div id="reviewID" value=""></div>
+          <div id="reviewUsername"></div>
+          <div class="row" text-center id ="editReviewBody">
+            <br><label for="reviewTitle">Title: </label><br>
+            <textarea id = "reviewTitle"class="form-control" type= "text" name ="reviewTitle" required rows = "3" cols="100%"></textarea>
+            <label for="reviewContent">Your Experience: </label><br>
+            <textarea type="text" name="reviewContent" id="reviewContent" class="form-control" required rows="3" cols="100%"></textarea>
+            <label for="stars">
+              <img src="../images/star-fill.jpg" style= "width: auto; height:auto;" class="editstar" onmouseover="rateIt(this)" value="1">
+              <img src="../images/star-fill.jpg" style= "width: auto; height:auto;" class="editstar" onmouseover="rateIt(this)" value= "2">
+              <img src="../images/star-fill.jpg" style= "width: auto; height:auto;" class="editstar" onmouseover="rateIt(this)" value="3">
+              <img src="../images/star-fill.jpg" style= "width: auto; height:auto;" class="editstar" onmouseover="rateIt(this)" value = "4">
+              <img src="../images/star-fill.jpg" style= "width: auto; height:auto;" class="editstar" onmouseover="rateIt(this)" value = "5">
+
+            </label>
+          </div>
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="submitReview" onClick="updateReview(this)" value="">Submit</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
